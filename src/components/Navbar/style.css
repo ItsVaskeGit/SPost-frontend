@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link {
+    margin: 20px 20px 20px 20px;
+    padding: 15px 30px 15px 30px;
+    border: 5px hidden;
+    border-radius: 20px;
+    background-color: #535bf2;
+    color: white;
+}
+
+.link:hover {
+    background-color: #646cff;
+    color: white;
+}
