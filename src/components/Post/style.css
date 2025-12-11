@@ -16,6 +16,10 @@
     padding: 20px 20px 20px 20px;
 }
 
+.post-container:hover {
+    background-color: darkcyan;
+}
+
 .title {
     margin-bottom: 30px;
     font-size: 40px;

@@ -8,6 +8,7 @@ import Register from "./pages/Register/Register.jsx";
 import NewPost from "./pages/NewPost/NewPost.jsx";
 import EditUserDetails from "./pages/EditUserDetails/EditUserDetails.jsx";
 import Discussion from "./pages/Discussion/Discussion.jsx";
+import PostNewComment from "./pages/PostNewComment/PostNewComment.jsx";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/new-post" element={<NewPost/>}/>
             <Route path="/user-edit" element={<EditUserDetails/>}/>
             <Route path="/discussion/:postId" element={<Discussion/>}/>
+            <Route path="/new-comment/:postId" element={<PostNewComment/>}/>
         </Routes>
     </BrowserRouter>
   )

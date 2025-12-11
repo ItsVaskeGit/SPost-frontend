@@ -15,7 +15,11 @@ export default function Post({id, data, authorName, postedAt, own}) {
             .then(() => { navigate("/profile") });
     }
 
-    return <div className="post-container">
+    function handlePostClick() {
+        navigate("/discussion/" + id);
+    }
+
+    return <div onClick={handlePostClick} className="post-container">
         <div className="title">Post</div>
         <div className="metadata">
             <div className="author">Author: {authorName}</div>
