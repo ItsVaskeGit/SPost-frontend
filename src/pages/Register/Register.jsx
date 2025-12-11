@@ -12,7 +12,8 @@ export default function Register() {
         firstName: '',
         lastName: '',
         email: '',
-        password: ''
+        password: '',
+        picture: ''
     });
 
     const [confirm, setConfirm] = useState('');
@@ -24,10 +25,11 @@ export default function Register() {
         if(formData.password === confirm) {
             await axios.post("http://localhost:8000/register", {
                 username: formData.username,
-                firstName: formData.firstName,
-                lastName: formData.lastName,
+                first_name: formData.firstName,
+                last_name: formData.lastName,
                 email: formData.email,
-                password: formData.password
+                password: formData.password,
+                picture_url: formData.picture
             }).then(() => {
                 navigate("/")
             }).catch((error) => {
@@ -73,6 +75,10 @@ export default function Register() {
             <label htmlFor="confirm">Confirm password: </label>
 
             <input type="password" name="confirm" onChange={handleConfirm}/>
+
+            <label htmlFor="picture">Picture URL: </label>
+
+            <input type="text" name="picture" onChange={handleChange}/>
 
             <button type="submit">Submit</button>
 

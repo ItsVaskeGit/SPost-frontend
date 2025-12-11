@@ -5,6 +5,8 @@ import Home from "./pages/Home/Home.jsx";
 import EditUser from "./pages/EditUser/EditUser.jsx";
 import Login from "./pages/Login/Login.jsx";
 import Register from "./pages/Register/Register.jsx";
+import NewPost from "./pages/NewPost/NewPost.jsx";
+import EditUserDetails from "./pages/EditUserDetails/EditUserDetails.jsx";
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
             <Route path="/profile" element={<EditUser/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/register" element={<Register/>}/>
+            <Route path="/new-post" element={<NewPost/>}/>
+            <Route path="/user-edit" element={<EditUserDetails/>}/>
         </Routes>
     </BrowserRouter>
   )
